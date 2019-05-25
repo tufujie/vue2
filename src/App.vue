@@ -2,27 +2,29 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
+    <h1>My English Name is {{ name }}</h1>
     <firstcomponent></firstcomponent>
     <ul>
       <li><router-link to="/first">第一页</router-link></li>
       <li><router-link to="/second">第二页</router-link></li>
     </ul>
     <router-view class="view"></router-view>
+    <a href="vue2-learn/src/test.html" target="_blank">测试用例</a>
   </div>
 </template>
-
+<script src="js/vue.min.js"></script>
 <script>
   import firstcomponent from './component/firstcomponent.vue'
   export default {
     data () {
       return {
-        msg: 'Hello Vue!'
+        msg: 'Hello Vue!',
+        name: 'Jef'
       }
     },
     components: { firstcomponent }
   }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
