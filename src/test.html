@@ -6,13 +6,10 @@
   <script src="js/vue.min.js"></script>
 </head>
 <style>
-  .class1 {
-    background: #444;
-    color: #eee;
-  }
+
 </style>
 <body>
-<button onclick="changeAge()">修改年龄</button>
+
 <div id="myInfo">
   <h1>goal : {{goal}}</h1>
   <h1>age : {{age}}</h1>
@@ -21,24 +18,12 @@
 <div id="app">
   <div v-html="message"></div>
 </div>
-<div id="app2">
-  <label for="r1">修改颜色</label><input type="checkbox" v-model="use" id="r1">
-  <br><br>
-  <div v-bind:class="{'class1': use}">
-    v-bind:class 指令
-  </div>
-</div>
-<div id="app3">
-  {{5+5}}<br>
-  {{ ok ? 'YES' : 'NO' }}<br>
-  {{ message.split('').reverse().join('') }}
-  <div v-bind:id="'list-' + id">菜鸟教程</div>
-</div>
 
 <script type="text/javascript">
   let data = {
     age: 18,
-    goal: "learn"
+    goal: "learn",
+    site: "杰克思勒的博客"
   };
   let vm = new Vue({
     el: '#myInfo',
@@ -67,33 +52,6 @@
   document.write("<br>");
   // true
   document.write(vm.$el === document.getElementById('myInfo'));
-
-  new Vue({
-    el: '#app',
-    data: {
-      message: '<h1>v-html输出</h1>'
-    }
-  });
-
-  new Vue({
-    el: '#app2',
-    data:{
-      use: false
-    }
-  });
-
-  new Vue({
-    el: '#app3',
-    data: {
-      ok: true,
-      message: 'JavaScript 表达式支持',
-      id : 1
-    }
-  });
-
-  function changeAge() {
-      this.age = 16;
-  }
 </script>
 </body>
 </html>

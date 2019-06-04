@@ -1,5 +1,5 @@
 <template>
-  <div id="firstcomponent">
+  <div id="firstComponent">
     <a> author by {{ author }} </a>
   </div>
 </template>
