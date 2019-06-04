@@ -1,6 +1,6 @@
 <template>
   <div id="firstComponent">
-    <a> author by {{ author }} </a>
+    <h2>我是第 1 个子页面，author by {{author}}</h2>
   </div>
 </template>
 

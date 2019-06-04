@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import VueResource from 'vue-resource'
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import firstComponent from './component/firstComponent.vue';
 import secondComponent from './component/secondComponent.vue';
 import $ from 'jquery';
 
@@ -13,10 +14,6 @@ Vue.config.debug = true;
 Vue.use(VueRouter);
 Vue.use(VueResource);
 Vue.use(Element);
-
-// 定义组件, 也可以像教程之前教的方法从别的文件引入
-const firstComponent = { template: '<div><h2>我是第 1 个子页面</h2></div>' };
-
 
 // 创建一个路由器实例
 // 并且配置路由规则
