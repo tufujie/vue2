@@ -195,11 +195,11 @@
     <ol>
       <site-item v-for="item in sites" v-bind:siteItem="item"></site-item>
     </ol>
+    <validateComponent v-bind:validateNum="123"></validateComponent>
 
 
 
-
-
+    <br/>
     <helloCompnent message="Hello Vue!"></helloCompnent>
     <authorComponent></authorComponent>
   </div>
@@ -397,7 +397,16 @@
   Vue.component('site-item', {
     props: ['siteItem'],
     template: '<li>{{ siteItem.name }}</li>'
-  })
+  });
+  Vue.component('validateComponent', {
+    props: {
+      validateNum: {
+        type: Number,
+        default: 100
+      }
+    },
+    template: '<input type="text" name="validateText" v-bind:validateNum="123">'
+  });
 </script>
 <style>
 #app {
