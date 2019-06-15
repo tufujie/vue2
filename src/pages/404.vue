@@ -5,11 +5,10 @@
 </template>
 
 <script>
-  import mainLayout from '../layouts/main.vue'
-
-  export default {
-    components: {
-        mainLayout
+    import mainLayout from '../layouts/main.vue'
+    export default {
+        components: {
+            mainLayout
+        }
     }
-  }
 </script>

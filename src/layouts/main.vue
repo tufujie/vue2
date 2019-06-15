@@ -13,14 +13,14 @@
 
 <script>
     import vLink from '../components/vLink.vue';
-        export default {
-            data() {
-                return {
-                }
-            },
-            components: {
-                vLink
+    export default {
+        data() {
+            return {
             }
+        },
+        components: {
+            vLink
+        }
     }
 </script>
 
