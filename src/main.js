@@ -4,8 +4,8 @@ import VueRouter from "vue-router";
 import VueResource from 'vue-resource'
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import firstComponent from './component/firstComponent.vue';
-import secondComponent from './component/secondComponent.vue';
+import firstComponent from './components/firstComponent.vue';
+import secondComponent from './components/secondComponent.vue';
 import $ from 'jquery';
 
 // 开启debug模式
