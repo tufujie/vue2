@@ -1,8 +1,9 @@
-let name = "Jef", url = "https://www.cnblogs.com/tufujie/", goal = "感受代码魅力，享受美好人生！";
+let name = "Jef", url = "https://www.cnblogs.com/tufujie/", goal = "感受代码魅力，享受美好人生！", author = 'Jef';
 export default {
     // 放置初始化的值
     msg: 'Hello Vue!',
         name: name,
+    author: author,
     site: "杰克思勒的博客",
     url: url,
     use: false,
@@ -12,7 +13,7 @@ export default {
     seen: true,
     userName: "",
     password: "",
-    message: "hello vue!",
+    message: "hello Vue!",
     rawId: "1234567890123456789012345678901234567890",
     type: "B",
     goal: goal,
@@ -57,9 +58,17 @@ export default {
     message2: "多行文本",
         checked : false,
     checkedNames: [],
-    picked: "Tecent",
+    picked: "Tencent",
     selected: '',
     age: 18,
     parentMsg: '父组件内容',
-    total: 0
+    total: 0,
+    styleobj :{
+        fontSize:'30px',
+        color:'red'
+    },
+    showV1: true,
+    showV2: true,
+    showV3: true,
+    showV4: true
 }
